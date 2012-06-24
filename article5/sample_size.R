@@ -3,7 +3,7 @@
 # t = eps / (sigma / sqrt(n)) = sqrt(n) * eps / sigma = sqrt(n) * eps
 # Thus, E[t] = E[sqrt(n) * eps] = sqrt(n) * E[eps]
 # We want to find smallest n such that:
-# CDF_t(sqrt(n) * eps, n - 1) > 0.975
+# CDF_t(sqrt(n) * E[eps], n - 1) > 0.975
 
 find.minimum.n <- function(eps)
 {
